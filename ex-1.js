@@ -1,23 +1,16 @@
 function fizzBuzz(n) {
   //Start coding here
-  const allNumber = [];
-  const result = [];
+  let result = [];
 
-  for (let i = 0; i <= n; i++) {
-    allNumber.push(i);
-  }
-
-  allNumber.shift()
-
-  for (let i = 0; i < allNumber.length; i++) {
-    if (allNumber[i] % 3 === 0 && allNumber[i] % 5 === 0) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
       result.push("FizzBuzz");
-    } else if (allNumber[i] % 3 === 0) {
+    } else if (i % 3 === 0) {
       result.push("Fizz");
-    } else if (allNumber[i] % 5 === 0) {
+    } else if (i % 5 === 0) {
       result.push("Buzz");
     } else {
-      result.push(String(allNumber[i]));
+      result.push(String(i));
     }
   }
 
